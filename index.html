@@ -17,16 +17,16 @@
             <form action="">
                 <div class="row">
                     <div class="col-4 mt-3">
-                        <label for="nome-cognome">Nome Cognome</label>
+                        <label>Nome Cognome</label>
                         <input type="text" id="name-field" class="form-control" />
                     </div>
                     <div class="col-4 mt-3">
-                        <label for="km-field">KM da percorrere</label>
+                        <label>KM da percorrere</label>
                         <input type="number" id="km-field" class="form-control" />
                     </div>
                     <div class="col-4 mt-3">
                         <label>Fascia d'età</label>
-                        <select id="range-field" class="form-select" aria-label="Default select example">
+                        <select id="age-field" class="form-select" aria-label="Default select example">
                             <option selected>Fascia d'età</option>
                             <option value="1">Minorenne</option>
                             <option value="2">Maggiorenne</option>
@@ -46,7 +46,7 @@
 
     <div class="container bg-light">
         <div class="row">
-            <div class="card-header" id="passName">
+            <div class="card-header">
                 DETTAGLIO PASSEGGERO
             </div>
             <div class="card-body">
@@ -54,6 +54,7 @@
                     <div class="col-2">
                         <p>
                             <span>Nome Passeggero</span>
+                            <span id="pass-name"></span>
                         </p>
                     </div>
                     <div class="col-2">
