@@ -58,3 +58,4 @@ button1.addEventListener('click', function(event) {
         offerta.innerHTML = 'Tariffa standard';
     }
 });
+
