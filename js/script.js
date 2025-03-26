@@ -31,7 +31,9 @@ const costo = document.getElementById('costo');
 const passName = document.getElementById('pass-name');
 
 //costo del biglietto
-let prezzo = 0; // Initialize prezzo outside the event listener
+let prezzo = 0; 
+const costoKm = 0.21; // costo al km
+prezzo = costoKm * parseFloat(kmField.value); // calcolo il prezzo del biglietto
 
 
 //creo azione al click del bottone
