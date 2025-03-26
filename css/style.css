@@ -12,3 +12,15 @@ h2{
     color: white;
     text-align: center;
 }
+
+.red-border{
+    border: 2px solid #b81550;;
+}
+
+.center{
+    text-align: center;
+}
+
+.txt-color{
+    color: #b81550;;
+}

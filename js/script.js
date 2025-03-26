@@ -34,7 +34,7 @@ const passName = document.getElementById('pass-name');
 
 
 
-//creo azione al click del bottone
+//creo azione al click del bottone genera
 button1.addEventListener('click', function(event) {
     event.preventDefault(); // blocco il comportamento predefinito del form
     carrozza.innerHTML = Math.floor(Math.random() * 9) + 1; // genero un numero casuale per la carrozza
@@ -57,5 +57,19 @@ button1.addEventListener('click', function(event) {
         costo.innerHTML = prezzo.toFixed(2);
         offerta.innerHTML = 'Tariffa standard';
     }
+});
+
+//creo azione al click del annulla
+
+button2.addEventListener('click', function(event) {
+    event.preventDefault(); // blocco il comportamento predefinito del form
+    // Resetta i campi della form
+    form.reset();
+    // Resetta i campi della card
+    passName.innerHTML = '';
+    carrozza.innerHTML = '';
+    codice.innerHTML = '';
+    costo.innerHTML = '';
+    offerta.innerHTML = '';
 });
 
