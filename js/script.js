@@ -31,9 +31,7 @@ const costo = document.getElementById('costo');
 const passName = document.getElementById('pass-name');
 
 //costo del biglietto
-let prezzo = 0;
-const costoKm = 0.21; // costo al km
-prezzo = costoKm * parseFloat(kmField.value); // calcolo il prezzo del biglietto
+
 
 
 //creo azione al click del bottone
@@ -43,12 +41,16 @@ button1.addEventListener('click', function(event) {
     codice.innerHTML = Math.floor(Math.random() * 10000) + 1; // genero un numero casuale per il codice CP
     passName.innerHTML = nameField.value; // accedo al valore del campo di input nameField
     
+
+    let prezzo = 0;
+    const costoKm = 0.21; // costo al km
+    prezzo = costoKm * parseFloat(kmField.value); // calcolo il prezzo del biglietto
     // calcolo il costo del biglietto
 
-    if (ageField.value === 'Minorenne') { // accedo al valore del campo di input ageField
+    if (ageField.value === 'minorenne') { // accedo al valore del campo di input ageField
         costo.innerHTML = (prezzo - (prezzo * 20 / 100)).toFixed(2);
         offerta.innerHTML = 'Sconto minorenne';
-    } else if (ageField.value === 'Over 65') { // accedo al valore del campo di input ageField
+    } else if (ageField.value === 'over 65') { // accedo al valore del campo di input ageField
         costo.innerHTML = (prezzo - (prezzo * 40 / 100)).toFixed(2);
         offerta.innerHTML = 'Sconto over 65';
     } else {
