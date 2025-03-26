@@ -42,10 +42,9 @@ button1.addEventListener('click', function(event) {
     passName.innerHTML = nameField.value; // accedo al valore del campo di input nameField
     
 
-    let prezzo = 0;
+    let prezzo = 0; // inizializzo la variabile prezzo
     const costoKm = 0.21; // costo al km
     prezzo = costoKm * parseFloat(kmField.value); // calcolo il prezzo del biglietto
-    // calcolo il costo del biglietto
 
     if (ageField.value === 'minorenne') { // accedo al valore del campo di input ageField
         costo.innerHTML = (prezzo - (prezzo * 20 / 100)).toFixed(2);
